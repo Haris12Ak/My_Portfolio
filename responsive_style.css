@@ -141,6 +141,20 @@
 }
 
 @media screen and (max-width: 720px) {
+    .section {
+        padding-top: 4vh;
+        height: fit-content;
+        margin: 50px 10px;
+    }
+
+    .hidden {
+        transform: none;
+    }
+
+    .show {
+        transform: none;
+    }
+
     .navBar {
         display: none;
     }
@@ -339,6 +353,19 @@
 }
 
 @media screen and (max-width: 500px) {
+    .section {
+        padding-top: 4vh;
+        height: fit-content;
+        margin: 50px 10px;
+    }
+
+    .hidden {
+        transform: none;
+    }
+
+    .show {
+        transform: none;
+    }
 
     .logo {
         font-size: 1.7em;
