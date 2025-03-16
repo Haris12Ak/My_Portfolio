@@ -145,6 +145,14 @@
         display: none;
     }
 
+    .hidden {
+        transform: none;
+    }
+
+    .show {
+        transform: none;
+    }
+
     .logo {
         font-size: 2.2em;
         letter-spacing: 5px;
@@ -339,9 +347,18 @@
 }
 
 @media screen and (max-width: 500px) {
+
     .logo {
         font-size: 1.7em;
         letter-spacing: 1;
+    }
+
+    .hidden {
+        transform: none;
+    }
+
+    .show {
+        transform: none;
     }
 
     #hamburger-nav {
