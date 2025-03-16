@@ -348,6 +348,12 @@
 
 @media screen and (max-width: 500px) {
 
+    .section {
+        padding-top: 4vh;
+        height: fit-content;
+        margin: 50px 10px;
+    }
+
     .logo {
         font-size: 1.7em;
         letter-spacing: 1;
