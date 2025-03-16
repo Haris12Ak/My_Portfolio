@@ -16,48 +16,51 @@
         <div>
             <ul class="menu">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <section id="profile">
+    <section id="profile" class="section hidden">
         <div class="profile-image">
             <img src="./assets/profile_image.jpg" alt="Profile image" />
         </div>
         <div class="profile-content">
-            <p style="font-size: 1.5em;">Hello, I`m</p>
+            <p style="font-size: 1.5em; color: gray;">Hello, I`m</p>
             <br />
-            <p style="font-size: 2.5em;">Haris Akšamović</p>
+            <p style="font-size: 2.5em; font-weight: 600;">Haris Akšamović</p>
             <br />
-            <p style="font-size: 2em;">Software Developer</p>
+            <p style="font-size: 2em; font-weight: 400;">Software Developer</p>
             <br />
             <div class="profile-button">
-                <button style="background-color: white;">Download CV</button>
+                <button data-url="https://drive.google.com/file/d/1cnF7kuOTOoMy36nlZRt5JZdcDtvdn7fn/view?usp=sharing"
+                    style="background-color: white;" onclick="openLink(event)">Download CV</button>
                 <button style="background-color: black; color: white;"><a href="#contact">Contact Info</a> </button>
             </div>
             <br />
             <div class="profile-icon">
-                <img width="50" height="50" src="./assets/github.png" />
-                <img width="50" height="50" src="./assets/linkedin.png" />
+                <img data-url="https://github.com/Haris12Ak" width="50" height="50" src="./assets/github.png"
+                    onclick="openLink(event)" />
+                <img data-url="https://www.linkedin.com/in/haris-aksamovic-847a67304" width="50" height="50"
+                    src="./assets/linkedin.png" onclick="openLink(event)" />
             </div>
         </div>
     </section>
 
-    <section id="about" class="section">
+    <section id="about" class="section hidden">
         <p>Get To Now More</p>
         <h1>About Me</h1>
         <div class="about-container">
             <div class="about-container-left">
-                <p>I am a final-year student at the Faculty of Information Technology in Mostar, majoring in
-                    Software Development. I have one more exam left - the internship - to complete my
-                    studies and earn my degree. Throughout my studies, I have gained solid theoretical
-                    knowledge and basic practical skills in various programming languages, databases, and
-                    software development tools. Since I do not have work experience, I am currently seeking
-                    an internship that would allow me to further enhance my knowledge, gain experience in
-                    real-world projects, and continue developing my programming skills.
+                <p>I am a final-year student at the Faculty of Information Technologies in Mostar, specializing in
+                    Software Development. Throughout my studies, I have worked on various projects using technologies
+                    such as ASP.NET Core, C#, Angular, Flutter, and SQL databases. These projects have given me hands-on
+                    experience in software development and problem-solving. I am especially motivated by working in a
+                    team environment, where I can exchange ideas and learn from others. I am open to new opportunities
+                    and eager to continue developing my skills, particularly in modern technologies and software
+                    architecture.
                 </p>
             </div>
             <div class="about-container-right">
@@ -73,28 +76,28 @@
                 <div class="about-container-right-box">
                     <img width="40" height="40" src="./assets/experience.png" />
                     <h3>
-                        Experience
+                        Skills
                     </h3>
                     <p>
                         Backend Development <br> Frontend Development
                     </p>
-                    <button> <a href="#experience">View</a></button>
+                    <button> <a href="#skills">View</a></button>
                 </div>
             </div>
         </div>
-        <a href="#experience"><img width="40" height="40" style="position: absolute; bottom: 40px; right: 0;"
+        <a href="#skills"><img width="40" height="40" style="position: absolute; bottom: 40px; right: 0;"
                 src="./assets/down-arrow.png" alt=""></a>
     </section>
 
-    <section id="experience" class="section">
+    <section id="skills" class="section hidden">
         <p>Explore My</p>
-        <h1>Experience</h1>
-        <div class="experience-container">
-            <div class="experience-container-box">
+        <h1>Skills</h1>
+        <div class="skills-container">
+            <div class="skills-container-box">
                 <p>Backend Development</p>
                 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: 20px;">
                     <div style="display: flex; justify-content: start; align-items: start; flex-direction: column;">
-                        <div class="experience-container-box-content">
+                        <div class="skills-container-box-content">
                             <img width="25" height="25" src="./assets/checked.png" alt="checked">
                             <div
                                 style="display: flex; justify-content: start; align-items: start; flex-direction: column;">
@@ -102,7 +105,7 @@
                                 <p>Experienced </p>
                             </div>
                         </div>
-                        <div class="experience-container-box-content">
+                        <div class="skills-container-box-content">
                             <img width="25" height="25" src="./assets/checked.png" alt="checked">
                             <div
                                 style="display: flex; justify-content: start; align-items: start; flex-direction: column;">
@@ -111,7 +114,7 @@
                             </div>
                         </div>
 
-                        <div class="experience-container-box-content">
+                        <div class="skills-container-box-content">
                             <img width="25" height="25" src="./assets/checked.png" alt="checked">
                             <div
                                 style="display: flex; justify-content: start; align-items: start; flex-direction: column;">
@@ -119,7 +122,7 @@
                                 <p>Experienced </p>
                             </div>
                         </div>
-                        <div class="experience-container-box-content">
+                        <div class="skills-container-box-content">
                             <img width="25" height="25" src="./assets/checked.png" alt="checked">
                             <div
                                 style="display: flex; justify-content: start; align-items: start; flex-direction: column;">
@@ -127,7 +130,7 @@
                                 <p>Experienced </p>
                             </div>
                         </div>
-                        <div class="experience-container-box-content">
+                        <div class="skills-container-box-content">
                             <img width="25" height="25" src="./assets/checked.png" alt="checked">
                             <div
                                 style="display: flex; justify-content: start; align-items: start; flex-direction: column;">
@@ -139,7 +142,7 @@
                     </div>
 
                     <div style="display: flex; justify-content: start; align-items: start; flex-direction: column;">
-                        <div class="experience-container-box-content">
+                        <div class="skills-container-box-content">
                             <img width="25" height="25" src="./assets/checked.png" alt="checked">
                             <div
                                 style="display: flex; justify-content: start; align-items: start; flex-direction: column;">
@@ -147,7 +150,7 @@
                                 <p>Experienced </p>
                             </div>
                         </div>
-                        <div class="experience-container-box-content">
+                        <div class="skills-container-box-content">
                             <img width="25" height="25" src="./assets/checked.png" alt="checked">
                             <div
                                 style="display: flex; justify-content: start; align-items: start; flex-direction: column;">
@@ -155,7 +158,7 @@
                                 <p>Intermediate </p>
                             </div>
                         </div>
-                        <div class="experience-container-box-content">
+                        <div class="skills-container-box-content">
                             <img width="25" height="25" src="./assets/checked.png" alt="checked">
                             <div
                                 style="display: flex; justify-content: start; align-items: start; flex-direction: column;">
@@ -163,7 +166,7 @@
                                 <p>Intermediate</p>
                             </div>
                         </div>
-                        <div class="experience-container-box-content">
+                        <div class="skills-container-box-content">
                             <img width="25" height="25" src="./assets/checked.png" alt="checked">
                             <div
                                 style="display: flex; justify-content: start; align-items: start; flex-direction: column;">
@@ -175,11 +178,11 @@
 
                 </div>
             </div>
-            <div class="experience-container-box">
+            <div class="skills-container-box">
                 <p>Frontent Development</p>
                 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: 20px;">
                     <div style="display: flex; justify-content: start; align-items: start; flex-direction: column;">
-                        <div class="experience-container-box-content">
+                        <div class="skills-container-box-content">
                             <img width="25" height="25" src="./assets/checked.png" alt="checked">
                             <div
                                 style="display: flex; justify-content: start; align-items: start; flex-direction: column;">
@@ -187,7 +190,7 @@
                                 <p>Experienced</p>
                             </div>
                         </div>
-                        <div class="experience-container-box-content">
+                        <div class="skills-container-box-content">
                             <img width="25" height="25" src="./assets/checked.png" alt="checked">
                             <div
                                 style="display: flex; justify-content: start; align-items: start; flex-direction: column;">
@@ -195,7 +198,7 @@
                                 <p>Experienced</p>
                             </div>
                         </div>
-                        <div class="experience-container-box-content">
+                        <div class="skills-container-box-content">
                             <img width="25" height="25" src="./assets/checked.png" alt="checked">
                             <div
                                 style="display: flex; justify-content: start; align-items: start; flex-direction: column;">
@@ -203,7 +206,7 @@
                                 <p>Intermediate</p>
                             </div>
                         </div>
-                        <div class="experience-container-box-content">
+                        <div class="skills-container-box-content">
                             <img width="25" height="25" src="./assets/checked.png" alt="checked">
                             <div
                                 style="display: flex; justify-content: start; align-items: start; flex-direction: column;">
@@ -214,7 +217,7 @@
                     </div>
 
                     <div style="display: flex; justify-content: start; align-items: start; flex-direction: column;">
-                        <div class="experience-container-box-content">
+                        <div class="skills-container-box-content">
                             <img width="25" height="25" src="./assets/checked.png" alt="checked">
                             <div
                                 style="display: flex; justify-content: start; align-items: start; flex-direction: column;">
@@ -222,7 +225,7 @@
                                 <p>Intermediate</p>
                             </div>
                         </div>
-                        <div class="experience-container-box-content">
+                        <div class="skills-container-box-content">
                             <img width="25" height="25" src="./assets/checked.png" alt="checked">
                             <div
                                 style="display: flex; justify-content: start; align-items: start; flex-direction: column;">
@@ -237,55 +240,58 @@
                     src="./assets/down-arrow.png" alt=""></a>
     </section>
 
-    <section id="projects" class="section">
+    <section id="projects" class="section hidden">
         <p>Details About</p>
         <h1>Projects</h1>
         <div class="projects-container">
             <div class="project-container-box">
-                <img src="./assets/profile_image.jpg" alt="profile_image">
-                <h2>eBarberShop</h2>
+                <img src="./assets/barbershop.jpg" alt="barbershop">
+                <h2>BarberShop</h2>
                 <div class="project-container-box-button">
-                    <button>
+                    <button data-url="https://github.com/Haris12Ak/eBarberShop" onclick="openLink(event)">
                         Github
                     </button>
-                    <button>
+                    <button
+                        data-url="https://drive.google.com/drive/folders/1QUjBd4QOJV5cggBKzWl5VdeQkX0SkFtP?usp=sharing"
+                        onclick="openLink(event)">
                         Demo
                     </button>
                 </div>
             </div>
             <div class="project-container-box">
-                <img src="./assets/profile_image.jpg" alt="profile_image">
+                <img src="./assets/healtcare.jpg" alt="healtcare">
                 <h2>HealthCare</h2>
                 <div class="project-container-box-button">
-                    <button>
+                    <button data-url="https://github.com/Haris12Ak/RS1-HealthCare" onclick="openLink(event)">
                         Github
                     </button>
-                    <button>
+                    <button
+                        data-url="https://docs.google.com/document/d/1l5CJiSYBRteca8czMa8Y4nu9MF5MBfeF/edit?usp=sharing&ouid=102467708028690471152&rtpof=true&sd=true"
+                        onclick="openLink(event)">
                         Demo
                     </button>
                 </div>
             </div>
             <div class="project-container-box">
-                <img src="./assets/profile_image.jpg" alt="profile_image">
+                <img src="./assets/multiplexcino.png" alt="multiplexcino">
                 <h2>MultiplexKino</h2>
                 <div class="project-container-box-button">
-                    <button>
+                    <button data-url="https://github.com/Haris12Ak/MultiplexKinoNoviRepo" onclick="openLink(event)">
                         Github
                     </button>
-                    <button>
+                    <button
+                        data-url="https://drive.google.com/file/d/1tgVbJ_4aCYkye6KXiqdgEAakDRc0Kg5v/view?usp=sharing"
+                        onclick="openLink(event)">
                         Demo
                     </button>
                 </div>
             </div>
             <div class="project-container-box">
-                <img src="./assets/profile_image.jpg" alt="profile_image">
+                <img src="./assets/IoTprojects.png" alt="IoTprojects">
                 <h2>IoT project</h2>
                 <div class="project-container-box-button">
-                    <button>
+                    <button data-url="https://github.com/Haris12Ak/IoT-Project" onclick="openLink(event)">
                         Github
-                    </button>
-                    <button>
-                        Demo
                     </button>
                 </div>
             </div>
@@ -294,24 +300,35 @@
                 src="./assets/down-arrow.png" alt=""></a>
     </section>
 
-    <section id="contact" class="section">
+    <section id="contact" class="section hidden">
         <p>Get In Touch</p>
         <h1>Contact Me</h1>
         <div class="contact-container">
             <div style="display: flex; justify-content: center; align-items: center;">
-                <img width="30" height="30" src="./assets/github.png" alt="">
+                <img width="30" height="30" src="./assets/email.png" alt="email">
                 <p>harisaksamovic12@gmail.com</p>
             </div>
             <div style="display: flex; justify-content: center; align-items: center;">
-                <img width="30" height="30" src="./assets/linkedin.png" alt="">
-                <p>LinkedIn</p>
+                <img class="contact-linkedIn-img" width="30" height="30" src="./assets/linkedin.png" alt="linkedin">
+                <a data-url="https://www.linkedin.com/in/haris-aksamovic-847a67304" onclick="openLink(event)">
+                    <p class="contact-linkedIn-content">LinkedIn</p>
+                </a>
             </div>
         </div>
         <div>
             <ul class="menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li style="display: flex; justify-content: center; align-items: center;"><img width="20" height="20"
+                        src="./assets/profile-user.png" alt="profile user" style="margin-right: 10px;"><a
+                        href="#profile">Profile</a></li>
+                <li style="display: flex; justify-content: center; align-items: center;"><img width="20" height="20"
+                        src="./assets/information-button.png" alt="information" style="margin-right: 10px;"><a
+                        href="#about">About</a></li>
+                <li style="display: flex; justify-content: center; align-items: center;"><img width="20" height="20"
+                        src="./assets/experience.png" alt="experience" style="margin-right: 10px;"><a
+                        href="#skills">Skills</a></li>
+                <li style="display: flex; justify-content: center; align-items: center;"><img width="20" height="20"
+                        src="./assets/execute.png" alt="execute" style="margin-right: 10px;"><a
+                        href="#projects">Projects</a></li>
             </ul>
         </div>
         <div>

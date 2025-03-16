@@ -4,14 +4,27 @@ body {
     padding: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
-    font-family: "Gill Sans", sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /*NAVIGATION*/
 
 .logo {
-    font-size: 2em;
+    font-size: 2.5em;
     color: black;
+    letter-spacing: 8px;
+    text-shadow: 2px 2px 4px #646464;
 }
 
 .navBar {
@@ -30,13 +43,25 @@ body {
 
 .menu li {
     display: inline;
+    transition: background-color 0.3s, transform 0.2s;
+    padding: 5px 10px;
+    color: grey;
+}
+
+.menu li:hover {
+    cursor: pointer;
+    border-bottom: 1px solid grey;
+    transform: scale(1.1);
 }
 
 .menu li a {
     color: black;
     text-decoration: none;
-    font-size: 1.3em;
-    transition: color 0.3s;
+    font-size: 1.5em;
+}
+
+.menu li a:hover {
+    color: grey;
 }
 
 /*SECTION*/
@@ -47,9 +72,6 @@ body {
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
-    /* display: flex;
-    align-items: center;
-    flex-direction: column; */
 }
 
 /* PROFILE */
@@ -85,6 +107,12 @@ body {
     gap: 2em;
 }
 
+.profile-button button:hover {
+    cursor: pointer;
+    opacity: .6;
+    transition: all .3s;
+}
+
 .profile-button button {
     padding: 15px 20px;
     font-size: 1.1em;
@@ -103,6 +131,12 @@ body {
 .profile-icon {
     display: flex;
     gap: 2em;
+}
+
+.profile-icon img:hover {
+    cursor: pointer;
+    opacity: .6;
+    transition: all .3s;
 }
 
 /* ABOUT */
@@ -139,8 +173,8 @@ body {
 }
 
 .about-container-left p {
-    text-align: justify !important;
-    font-size: 1.1em !important;
+    text-align: left !important;
+    font-size: 1.5em !important;
     color: #333 !important;
     line-height: 1.5 !important;
 }
@@ -184,6 +218,13 @@ body {
     border-bottom: 2px solid black;
 }
 
+.about-container-right-box button:hover {
+    cursor: pointer;
+    opacity: .5;
+    color: grey;
+    border-bottom: 2px solid grey;
+}
+
 .about-container-right-box button a {
     text-decoration: none;
     color: black;
@@ -191,25 +232,26 @@ body {
     font-size: 1.1em;
 }
 
-/*EXPERIENCE*/
 
-#experience {
+/*SKILLS*/
+
+#skills {
     position: relative;
 }
 
-#experience p {
+#skills p {
     font-size: 1em;
     color: grey;
     text-align: center;
 }
 
-#experience h1 {
+#skills h1 {
     font-size: 3em;
     padding-top: 4vh;
     text-align: center;
 }
 
-.experience-container {
+.skills-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,7 +259,7 @@ body {
     gap: 4rem;
 }
 
-.experience-container-box {
+.skills-container-box {
     width: 100%;
     height: 50vh;
     /* border: 1px solid black; */
@@ -226,29 +268,29 @@ body {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.experience-container-box p {
+.skills-container-box p {
     font-size: 1.8em !important;
     font-weight: 600 !important;
     letter-spacing: 0.1em !important;
 }
 
-.experience-container-box img {
+.skills-container-box img {
     margin-right: 20px !important;
 }
 
-.experience-container-box-content {
+.skills-container-box-content {
     display: flex;
     justify-content: start;
     align-items: start;
     margin-top: 20px;
 }
 
-.experience-container-box-content h2 {
+.skills-container-box-content h2 {
     color: black !important;
     font-size: 1.5em !important;
 }
 
-.experience-container-box-content p {
+.skills-container-box-content p {
     color: grey !important;
     font-size: 1.2em !important;
 }
@@ -286,9 +328,16 @@ body {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
+.project-container-box:hover {
+    background-color: rgba(128, 128, 128, 0.109);
+    background-image: linear-gradient(rgba(24, 23, 23, 0.777), rgba(128, 128, 128, 0));
+    transition: all .3s;
+    box-shadow: rgba(0, 0, 0, 0.565) 1.95px 1.95px 2.6px;
+}
+
 .project-container-box img {
     width: 100%;
-    height: 350px; 
+    height: 300px;
     border-radius: 40px;
 }
 
@@ -304,6 +353,14 @@ body {
     background-color: white;
     color: black;
     font-size: 1em;
+}
+
+.project-container-box-button button:hover {
+    cursor: pointer;
+    background-color: rgba(24, 23, 23, 0.777);
+    color: white;
+    transition: all .3s;
+    border: none;
 }
 
 .project-container-box h2 {
@@ -340,10 +397,22 @@ body {
     padding: 40px;
     gap: 5rem;
     border-radius: 50px;
-    border: 1px solid black;
+    background-color: rgba(128, 128, 128, 0.055);
+    box-shadow: rgba(0, 0, 0, 0.504) 1.95px 1.95px 2.6px;
 }
 
 .contact-container p {
     font-size: 1.4em !important;
     margin-left: 15px !important;
+}
+
+.contact-linkedIn-content {
+    cursor: pointer;
+}
+
+.contact-linkedIn-content:hover {
+    cursor: pointer;
+    padding-bottom: 5px;
+    border-bottom: 1px solid gray;
+    transition: all .3s;
 }
